@@ -1,16 +1,16 @@
 #define BLYNK_TEMPLATE_ID "TMPL3pc1GEVZB"
 #define BLYNK_TEMPLATE_NAME "gasleak"
-#define BLYNK_AUTH_TOKEN "r2n4sGKDANgyUT5tpu0JQQtA7LzzZbWd"
+#define BLYNK_AUTH_TOKEN "r2n4sGKDANgyUT5tpu0JQQtA7LzZbWd" // your token number
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 BlynkTimer timer;
 #define BLYNK_PRINT Serial    
 char auth[] = "r2n4sGKDANgyUT5tpu0JQQtA7LzzZbWd"; 
-char ssid[] = "Airtel_3036";
-char pass[] = "Airtel@123"; 
+char ssid[] = "Airtel_3"; //  wifi name
+char pass[] = "Airtel@3";  //wifi password
  
 #define buzzer_alarm D3
-const int buzzer = D3;
+const int buzzer = D3; 
 
 int alarm_status;
 int mq2 = A0; // smoke sensor is connected with the analog pin A0 
